@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="onest-font/stylesheet.css" />
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>The Rock x Paper x Scissors</h1>
+    </div>
+    <div class="main-game">
+      <div class="container">
+        <div class="winner-content">
+          <p class="win-ply"></p>
+        </div>
+
+        <div class="main-game-section">
+          <div class="img-box" id="rock">
+            <a href="#"><img src="img/rock.png" alt="rock" /></a>
+          </div>
+          <div class="img-box" id="paper">
+            <a href="#"><img src="img/paper.png" alt="paper" /></a>
+          </div>
+          <div class="img-box" id="scissors">
+            <a href="#"><img src="img/scissors.png" alt="scissors" /></a>
+          </div>
+        </div>
+        <div class="score-board">
+          <div class="scores">
+            <p>your Score</p>
+            <p id="your-score">0</p>
+          </div>
+          <div class="scores">
+            <p>Computer Score</p>
+            <p id="computer-score">0</p>
+          </div>
+        </div>
+        <div class="play-game-btn">
+          <button class="play-btn">Play Game</button>
+        </div>
+      </div>
+    </div>
+    <script src="custom.js"></script>
+  </body>
+</html>

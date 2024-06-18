@@ -1,0 +1,115 @@
+/* animation in css */
+@keyframes glow {
+  from {
+    box-shadow: 0px 2px 14px 0px #f85b37;
+  }
+  to {
+    box-shadow: 0px 6px 20px 0px #f85b37;
+  }
+}
+@keyframes textanimation {
+  from {
+    color: #fff;
+    text-shadow: 0px 0px 2px #fff;
+    letter-spacing: 15px;
+  }
+  to {
+    color: #ff3001;
+    text-shadow: 0px 0px 2px #f85b37;
+    letter-spacing: 0px;
+  }
+}
+
+@keyframes bounce {
+  from {
+    top: -30px;
+  }
+  to {
+    top: 0;
+  }
+}
+/* normal css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Onest";
+  background-color: #000;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* main css start */
+.heading {
+  background-color: rgb(30, 30, 30);
+  padding: 40px 0;
+  border-bottom: 2px solid #ff3001;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.heading h1 {
+  color: #ff3001;
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  animation: textanimation 1s ease-in-out infinite alternate;
+}
+
+.main-game-section {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 100px;
+}
+.main-game-section .img-box {
+  width: 250px;
+  position: relative;
+  animation: bounce 0.5s ease-in-out infinite alternate;
+}
+.main-game-section .paper {
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+.main-game-section .scissors {
+  animation: bounce 1.5s ease-in-out infinite alternate;
+}
+.main-game-section .img-box:hover {
+  transform: rotate(-90deg);
+  top: 0;
+  animation: none;
+  transition: all ease 0.5s;
+}
+.main-game-section .img-box img {
+  width: 100%;
+}
+.score-board {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+.scores {
+  display: flex;
+  gap: 30px;
+}
+.scores p {
+  color: #fff;
+  font-size: 25px;
+}
+.play-game-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.play-btn {
+  background-color: #ff3001;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 25px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
